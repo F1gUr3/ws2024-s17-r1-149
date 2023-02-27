@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/script.js" defer type="module"></script>
+</head>
+<body>
+
+    <nav id="navigation">
+        <a href="../index.html" id="logo"><img src="../sources/img/images/UB-logo-yolo-feher-571x387.png" alt="logo"></a>
+        <ul id="menu">
+            <li class="item"><a href="../index.html">homepage</a></li>
+            <li class="item"><a href="#" id="link-active">calculator</a></li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <div id="competition-title"> 
+            <h1><span class="highlight-blue">Calc</span>ulator</h1>
+        </div>
+    </div>
+
+    <h1 class="section-title">Team Member Table</h1>
+    <div class="flex-container">
+        <div id="flex-header">
+            <h2 class="flex-item">Line Number</h2>
+            <h2 class="flex-item">First Name</h2>
+            <h2 class="flex-item">Last Name</h2>
+            <h2 class="flex-item">Speed</h2>
+            <h2 class="flex-item">Total Distance</h2>
+        </div>
+
+            
+    </div>
+
+
+    <h1 class="section-title">Stage Table</h1>
+
+    <div class="flex-container-two">
+        <div id="flex-header">
+            <h2 class="flex-item">Line Number</h2>
+            <h2 class="flex-item">Distance</h2>
+            <h2 class="flex-item">Starting Point</h2>
+            <h2 class="flex-item">Arriving Point</h2>
+            <h2 class="flex-item">Name</h2>
+            <h2 class="flex-item">Runner</h2>
+            <h2 class="flex-item">Time</h2>
+        </div>
+    </div>
+    
+    
+
+
+
+
+    <!-- Templates -->
+
+    <template id="team-member-row">
+        <div class="flex-row" id="">
+            <h2 class="flex-item"></h2>
+            <h2 class="flex-item" contenteditable=""></h2>
+            <h2 class="flex-item" contenteditable=""></h2>
+            <h2 class="flex-item" contenteditable=""></h2>
+            <h2 class="flex-item"></h2>
+        </div>
+
+    </template>
+
+    <template id="stage-assignment-row">
+        <div class="flex-row" id="">
+            <h2 class="flex-item"></h2>
+            <h2 class="flex-item" ></h2>
+            <h2 class="flex-item" ></h2>
+            <h2 class="flex-item" ></h2>
+            <h2 class="flex-item"></h2>
+            <h2 class="flex-item"> 
+                <select name="runners" class="runners" >
+
+                </select>
+            </h2>
+            <h2 class="flex-item" ></h2>
+
+        </div>
+
+    </template>
+
+</body>
+</html>
