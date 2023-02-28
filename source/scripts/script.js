@@ -7,7 +7,7 @@ const minutesRemaining = document.getElementById("minutes-remaining");
 
 
 //for countdown
-let timeOfCompetition = new Date(2023, 4, 6, 7, 0, 0);
+let timeOfCompetition = new Date(2023, 4, 6, 5, 0, 0);
 
 //Getting current date
 let currentTime = new Date();
@@ -85,7 +85,27 @@ if(document.URL.includes("index.html")){
 
 
 
+//Carousal start
+let carousel = document.querySelector('.carousel');
+let left = document.querySelector('.left-arrow');
+let right = document.querySelector('.right-arrow');
+let item = document.querySelector('.item');
+let currentId = 1;
+(function () {
+   right.addEventListener('click', function (e) {
+      if (true) {
+        console.log("Allah is greatest");
+        item.classList.remove("active")
+        item.classList.add("inactive")
+        //carousel.querySelector(".item:nth-child()")
 
+      }
+   });
+   left.addEventListener('click', function () {
+      carousel.scrollLeft -= item.clientWidth;
+   });
+})
+// Carousal end
 
 
 
@@ -101,7 +121,8 @@ if(document.URL.includes("index.html")){
 
 //API for data
 
-const url = 'https://ub2023-backend.onrender.com/api/v1/stages';
+if(document.URL.includes("calculator.html")){
+    const url = 'https://ub2023-backend.onrender.com/api/v1/stages';
 
 let apiData;
 
@@ -204,6 +225,9 @@ for(let i = 0; i < 10;++i){
 
 localStorage.setItem("data", JSON.stringify(memberData))
 const dropDown = document.getElementById("runners");
+
+}
+
 
 
 
