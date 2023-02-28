@@ -199,23 +199,7 @@ function storeData(event){
     let value = event.target.childNodes[0].data;
     memberData[rowId][columnId] = value;
 
-    // function formatLenghtFiveChar(value){
-    //     return value.contains(":") && value.length <= 5
-    // }
-    // function formatLenghtFourChar(value){
-    //     return value.length <= 4
-    // }
 
-    // if (columnId == "speed" && (formatLenghtFiveChar(value) || formatLenghtFourChar(value))) {
-
-    //     let value = event.target.childNodes[0].data;
-    //     value = Date()
-    //     memberData[rowId][columnId] = value;
-
-    // }
-    // else{
-       
-    // }
     
 }
 
@@ -224,7 +208,6 @@ for(let i = 0; i < 10;++i){
     memberData.push({});
 }
 
-//localStorage.setItem("data", JSON.stringify(memberData))
 const dropDown = document.getElementById("runners");
 
 }
