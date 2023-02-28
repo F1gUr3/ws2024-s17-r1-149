@@ -85,32 +85,33 @@ if(document.URL.includes("index.html")){
 
 
 
-//Carousal start
-let carousel = document.querySelector('.carousel');
-let left = document.querySelector('.left-arrow');
-let right = document.querySelector('.right-arrow');
-let item = document.querySelector('.item');
-let currentId = 1;
-(function () {
-   right.addEventListener('click', function (e) {
-      if (true) {
-        console.log("Allah is greatest");
-        item.classList.remove("active")
-        item.classList.add("inactive")
-        //carousel.querySelector(".item:nth-child()")
-
-      }
-   });
-   left.addEventListener('click', function () {
-      carousel.scrollLeft -= item.clientWidth;
-   });
-})
-// Carousal end
 
 
 
+//Hamburger menu
 
-//for countdown end
+let menuList = document.getElementById("menu");
+let hamburgerMenu = document.getElementById("menu-hamburger");
+
+
+function openCloseMenu(){
+    console.log(menuList.style.display)
+    if(menuList.style.display === ''){
+        menuList.style.display = "flex";
+        console.log("ay1a")
+
+    }
+    else if(menuList.style.display === 'flex'){
+        menuList.style.display = "none";
+        console.log("ay2a")
+
+    }
+    else if(menuList.style.display === 'none'){
+        menuList.style.display = "flex";
+
+    }
+}
+
 
 //LANDING PAGE END
 
@@ -223,7 +224,7 @@ for(let i = 0; i < 10;++i){
     memberData.push({});
 }
 
-localStorage.setItem("data", JSON.stringify(memberData))
+//localStorage.setItem("data", JSON.stringify(memberData))
 const dropDown = document.getElementById("runners");
 
 }

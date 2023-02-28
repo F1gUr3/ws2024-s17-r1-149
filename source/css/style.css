@@ -429,7 +429,7 @@ footer{
 #menu{
     list-style: none;
     padding: 1em;
-    display: flex;
+    display: none;
     flex-direction: column;
     
     
